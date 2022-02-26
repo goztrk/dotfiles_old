@@ -5,6 +5,7 @@ nmap ğ [
 nmap Ğ {
 nmap ü ]
 nmap Ü }
+nmap ı i
 "}
 
 " Space + s saves the file
