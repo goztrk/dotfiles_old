@@ -73,5 +73,7 @@ Plug 'neovim/nvim-lspconfig'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 "}
