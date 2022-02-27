@@ -73,3 +73,19 @@ syntax on
 
 " Make indentation based on filetype
 filetype plugin indent on
+
+"{ Netrw settings
+" Change netrw directory view
+let g:netrw_liststyle = 3
+
+" Directory banner
+let g:netrw_banner = 0
+
+" Change how files are opened
+" 1 - open files in a new horizontal split
+" 2 - open files in a new vertical split
+" 3 - open files in a new tab
+" 4 - open in previous window
+" let g:netrw_browse_split = 2
+
+"}

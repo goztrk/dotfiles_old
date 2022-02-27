@@ -37,9 +37,6 @@ Plug 'hail2u/vim-css3-syntax'
 " less syntax highlight
 Plug 'groenewege/vim-less'
 
-" file tree
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-
 " fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -72,5 +69,17 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'mattn/emmet-vim'
 
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'fisadev/vim-isort'
+
+Plug 'lambdalisue/fern.vim'
+
+Plug 'antoinemadec/FixCursorHold.nvim'
+
+Plug 'lambdalisue/fern-hijack.vim'
+
 call plug#end()
 "}
+
+let g:cursorhold_updatetime = 100

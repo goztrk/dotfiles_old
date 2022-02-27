@@ -10,3 +10,4 @@ nmap ı i
 
 " Space + s saves the file
 nmap <leader>s :write<enter>
+
