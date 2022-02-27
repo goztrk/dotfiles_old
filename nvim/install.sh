@@ -12,7 +12,7 @@ if [ ! -d $HOME/.nvimenv ]; then
 		sudo apt install python3.10 python3.10-dev python3.10-venv
 	fi
 
-	sh -c 'python3.10 -m venv $HOME/.nvimenv'
+	sh -c 'python3 -m venv $HOME/.nvimenv'
 	sh -c '~/.nvimenv/bin/pip install --upgrade pip'
 fi
 
