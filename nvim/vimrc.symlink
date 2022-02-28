@@ -164,14 +164,14 @@ Plug 'alvan/vim-closetag'
 Plug 'kchmck/vim-coffee-script'
 Plug 'slim-template/vim-slim'
 Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'rust-lang/rust.vim'
-Plug 'tpope/vim-rails', { 'for': [] }
-Plug 'derekwyatt/vim-scala'
 Plug 'honza/dockerfile.vim'
 Plug 'solarnz/thrift.vim'
 Plug 'dag/vim-fish'
 Plug 'chrisbra/unicode.vim', { 'for': 'journal' }
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'sheerun/vim-polyglot'
+Plug 'evanleck/vim-svelte'
+Plug 'mattn/emmet-vim'
 Plug 'ferrine/md-img-paste.vim'
   autocmd FileType markdown nnoremap <buffer> <silent> <leader>v :call mdip#MarkdownClipboardImage()<CR>
   let g:mdip_imgdir = 'images'
@@ -191,7 +191,7 @@ endif
 " BASIC SETTINGS {{{
 " ============================================================================
 
-set nu
+set rnu
 set autoindent
 set smartindent
 set lazyredraw
@@ -368,9 +368,9 @@ nnoremap <leader>Q :qa!<cr>
 
 " Tags
 nnoremap <C-]> g<C-]>
-nnoremap <C-ü> g<C-]> " Turkish-Q Keyboard
+nnoremap <C-ü> g<C-]> 
 nnoremap g[ :pop<cr>
-nnoremap gğ :pop<cr> " Turkish-Q Keyboard
+nnoremap gğ :pop<cr> 
 
 " Jump list (to newer position)
 nnoremap <C-p> <C-i>
@@ -463,6 +463,12 @@ nnoremap <silent> gpi :<c-u>call <SID>go_indent(v:count1, -1)<cr>
 " <leader>bs | buf-search
 " ----------------------------------------------------------------------------
 nnoremap <leader>bs :cex []<BAR>bufdo vimgrepadd @@g %<BAR>cw<s-left><s-left><right>
+
+" ----------------------------------------------------------------------------
+" Emmet
+" ----------------------------------------------------------------------------
+nnoremap <leader>e <C-Y>,
+inoremap <C-e> <C-Y>,
 
 " }}}
 
