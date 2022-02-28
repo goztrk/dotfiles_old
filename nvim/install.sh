@@ -1,8 +1,11 @@
+# Setup neovim
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+
 if [ ! -L $HOME/.config/nvim ]; then
-	sudo apt-get install software-properties-common
-	sudo add-apt-repository ppa:neovim-ppa/stable
-	sudo apt-get update
-	sudo apt-get install neovim
   ln -sv $HOME/.dotfiles/nvim $HOME/.config/nvim
 fi
 
@@ -12,8 +15,8 @@ if [ ! -f $HOME/.local/share/nvim/site/autoload/plug.vim ]; then
 fi
 
 if [ ! -d $HOME/.nvimenv ]; then
-	if hash python3.10 2>/dev/null; then
-		sudo apt install python3.10 python3.10-dev python3.10-venv
+	if hash python3 2>/dev/null; then
+		sudo apt install python3 python3-dev python3-venv
 	fi
 
 	sh -c 'python3 -m venv $HOME/.nvimenv'
